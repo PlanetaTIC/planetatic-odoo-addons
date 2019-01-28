@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 PlanetaTIC <info@planetatic.com>
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl) -->
+<odoo>
+
+<record id="view_cloc_tree" model="ir.ui.view">
+    <field name="name">module.cloc.tree</field>
+    <field name="model">module.cloc</field>
+    <field name="arch" type="xml">
+        <tree string="Lines of code">
+            <field name="module_id"/>
+            <field name="sum_nFiles" sum="Number of files"/>
+            <field name="sum_blank" sum="Blank lines"/>
+            <field name="sum_comment" sum="Comment lines"/>
+            <field name="sum_code" sum="Code lines"/>
+        </tree>
+    </field>
+</record>
+
+<record id="view_cloc_form" model="ir.ui.view">
+    <field name="name">module.cloc.form</field>
+    <field name="model">module.cloc</field>
+    <field name="arch" type="xml">
+        <form string="Lines of code">
+            <sheet>
+                <div class="oe_title">
+                    <h1>
+                        <field name="module_id"/>
+                    </h1>
+                    <button type="object" name="action_count_loc" string="Count lines of code" class="btn-link"/>
+                </div>
+                <group>
+                    <group>
+                        <field name="cloc_url"/>
+                        <field name="cloc_version"/>
+                    </group>
+                    <group>
+                        <field name="elapsed_seconds"/>
+                        <field name="files_per_second"/>
+                        <field name="lines_per_second"/>
+                    </group>
+                </group>
+                <field name="lang_ids" mode="tree">
+                    <tree string="Languages">
+                        <field name="lang"/>
+                        <field name="nFiles" sum="Number of files"/>
+                        <field name="blank" sum="Blank lines"/>
+                        <field name="comment" sum="Comment lines"/>
+                        <field name="code" sum="Code lines"/>
+                    </tree>
+                </field>
+                <group>
+                    <group>
+                        <!-- 
+                        <field name="sum_nFiles"/>
+                        <field name="sum_blank"/>
+                        <field name="sum_comment"/>
+                        <field name="sum_code"/>
+                         -->
+                    </group>
+                    <group>
+                        <field name="n_files"/>
+                        <field name="n_lines"/>
+                    </group>
+                </group>
+            </sheet>
+        </form>
+    </field>
+</record>
+
+<record id="action_cloc" model="ir.actions.act_window">
+    <field name="name">Lines of code</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">module.cloc</field>
+    <field name="view_type">form</field>
+    <field name="view_mode">tree,form</field>
+</record>
+
+<record id="action_count_loc" model="ir.actions.server">
+    <field name="name">Count lines of code</field>
+    <field name="condition">True</field>
+    <field name="type">ir.actions.server</field>
+    <field name="model_id" ref="model_module_cloc"/>
+    <field name="state">code</field>
+    <field name="code">model.action_count_loc()</field>
+</record>
+
+<record id="link_count_loc" model="ir.values">
+    <field name="model_id" ref="model_module_cloc"/>
+    <field name="name">Count lines of code</field>
+    <field name="key2">client_action_multi</field>
+    <field name="value" eval="'ir.actions.server,' + str(ref('action_count_loc'))"/>
+    <field name="key">action</field>
+    <field name="model">module.cloc</field>
+</record>
+
+</odoo>
