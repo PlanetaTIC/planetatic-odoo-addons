@@ -30,7 +30,7 @@ class ModuleCloc(models.Model):
     _rec_name = 'module_id'
 
     module_id = fields.Many2one('ir.module.module', string='Module',
-                                required=True, index=True)
+                                required=True, ondelete='cascade', index=True)
 
     cloc_url = fields.Char(string='cloc URL')
     cloc_version = fields.Char(string='cloc version')
