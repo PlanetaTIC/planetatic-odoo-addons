@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2019 PlanetaTIC <info@planetatic.com>
+     License LGPL-3.0 or later (https://www.gnu.org/licenses/lgpl). -->
+
+<odoo>
+
+<record id="view_partner_form" model="ir.ui.view">
+    <field name="name">res.partner.form.partner_invoice_group</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="base.view_partner_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//page[@name='sales_purchases']//field[@name='user_id']" position="after">
+            <field name="customer_invoice_group" string="Invoice to group"/>
+            <field name="customer_invoice_group_id" string="Invoice group" attrs="{'required': [('customer_invoice_group', '=', True)]}"/>
+        </xpath>
+    </field>
+</record>
+
+</odoo>
