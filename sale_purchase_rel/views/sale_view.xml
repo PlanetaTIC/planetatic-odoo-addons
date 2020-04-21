@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2018 PlanetaTIC - Francisco Fernández <ffernandez@planetatic.com>
+     Copyright 2018 PlanetaTIC - Lluís Rovira <lrovira@planetatic.com>
+     License LGPL-3.0 or later (http://www.gnu.org/licenses/lgpl). -->
+<odoo>
+
+<record id="view_order_form" model="ir.ui.view">
+    <field name="name">sale_purchase_rel.sale.order.form</field>
+    <field name="model">sale.order</field>
+    <field name="inherit_id" ref="sale.view_order_form"/>
+    <field name="arch" type="xml">
+        <xpath expr="//header/field[@name='state']" position="before">
+            <field name="purchase_ids" invisible="1"/>
+            <button type="object" name="action_view_purchases" class="oe_highlight" icon="fa-arrow-circle-right" attrs="{'invisible': ['|', ('purchase_ids', '=', False), ('purchase_ids', '=', [])]}" string="View Purchases"/>
+        </xpath>
+        <xpath expr="//field[@name='order_line']/tree/field[@name='price_subtotal']" position="after">
+            <field name="purchase_ids" invisible="1"/>
+            <button type="object" name="action_view_purchase" icon="fa-arrow-circle-right" attrs="{'invisible': ['|', ('purchase_ids', '=', False), ('purchase_ids', '=', [])]}" help="View Purchase"/>
+        </xpath>
+    </field>
+</record>
+
+</odoo>

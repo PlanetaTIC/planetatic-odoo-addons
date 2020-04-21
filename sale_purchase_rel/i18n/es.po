@@ -1,0 +1,157 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* sale_purchase_rel
+#
+# Translators:
+# PlanetaTIC - Francisco Fernández <ffernandez@planetatic.com>, 2018
+# PlanetaTIC - Lluís Rovira <lrovira@planetatic.com>, 2018
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2017-11-30 10:43+0000\n"
+"PO-Revision-Date: 2017-11-30 10:43+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_procurement_order_mto_buy_procurement_ids
+msgid "Buy procurements associated to this MTO procurement"
+msgstr "Abastecimientos de compra asociados con este abastecimiento MTO"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_stock_move_out_in_picking_ids
+msgid "In pickings associated to this out move"
+msgstr "Albaranes entrantes asociados con este movimiento saliente"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_stock_picking_out_in_picking_ids
+msgid "In pickings associated to this out picking"
+msgstr "Albaranes entrantes asociados con este albarán saliente"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_procurement_order_buy_mto_procurement_id
+msgid "MTO procurement associated to this buy procurement"
+msgstr "Abastecimiento MTO asociado con este abastecimiento de compra"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_sale_order_line_mto_procurement_ids
+msgid "MTO procurements associated to this sale line"
+msgstr "Abastecimiento MTO asociado con esta línea de venta"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_stock_move_in_out_picking_id
+msgid "Out picking associated to this in move"
+msgstr "Albaranes salientes asociados con este movimiento entrante"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_stock_picking_in_out_picking_ids
+msgid "Out pickings associated to this in picking"
+msgstr "Albaranes salientes asociados con este albarán entrante"
+
+#. module: sale_purchase_rel
+#: model:ir.model,name:sale_purchase_rel.model_procurement_order
+msgid "Procurement"
+msgstr "Abastecimiento"
+
+#. module: sale_purchase_rel
+#: model:ir.model,name:sale_purchase_rel.model_purchase_order
+msgid "Purchase Order"
+msgstr "Orden de Compra"
+
+#. module: sale_purchase_rel
+#: model:ir.model,name:sale_purchase_rel.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea de orden de compra"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_procurement_order_mto_purchase_line_ids
+msgid "Purchase lines associated to this MTO procurement"
+msgstr "Líneas de compra asociadas con este abastecimiento MTO"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_sale_order_line_purchase_line_ids
+msgid "Purchase lines associated to this sale line"
+msgstr "Líneas de compra asociadas con esta línea de venta"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_sale_order_line_purchase_ids
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_sale_order_purchase_ids
+msgid "Purchases associated to this sale"
+msgstr "Compras asociadas con esta venta"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_procurement_order_buy_sale_line_id
+msgid "Sale line associated to this buy procurement"
+msgstr "Línea de venta asociada con este abastecimiento de compra"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_purchase_order_line_sale_line_ids
+msgid "Sale lines associated to this purchase line"
+msgstr "Líneas de venta asociadas con esta línea de compra"
+
+#. module: sale_purchase_rel
+#: model:ir.model,name:sale_purchase_rel.model_sale_order
+msgid "Sales Order"
+msgstr "Pedido de venta"
+
+#. module: sale_purchase_rel
+#: model:ir.model,name:sale_purchase_rel.model_sale_order_line
+msgid "Sales Order Line"
+msgstr "Línea de pedido de venta"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_purchase_order_sale_ids
+msgid "Sales associated to this purchase"
+msgstr "Ventas asociadas con esta compra"
+
+#. module: sale_purchase_rel
+#: model:ir.model.fields,field_description:sale_purchase_rel.field_purchase_order_line_sale_ids
+msgid "Sales associated to this purchase line"
+msgstr "Ventas asociadas con esta línea de compra"
+
+#. module: sale_purchase_rel
+#: model:ir.model,name:sale_purchase_rel.model_stock_move
+msgid "Stock Move"
+msgstr "Movimiento de existencias"
+
+#. module: sale_purchase_rel
+#: model:ir.model,name:sale_purchase_rel.model_stock_picking
+msgid "Transfer"
+msgstr "Transferir"
+
+#. module: sale_purchase_rel
+#: model:ir.ui.view,arch_db:sale_purchase_rel.view_move_picking_tree
+#: model:ir.ui.view,arch_db:sale_purchase_rel.view_picking_form
+msgid "View In Pickings"
+msgstr "Ver Albaranes Entrantes"
+
+#. module: sale_purchase_rel
+#: model:ir.ui.view,arch_db:sale_purchase_rel.view_move_picking_tree
+msgid "View Out Picking"
+msgstr "Ver Albarán Saliente"
+
+#. module: sale_purchase_rel
+#: model:ir.ui.view,arch_db:sale_purchase_rel.view_picking_form
+msgid "View Out Pickings"
+msgstr "Ver Albaranes Salientes"
+
+#. module: sale_purchase_rel
+#: model:ir.ui.view,arch_db:sale_purchase_rel.view_order_form
+msgid "View Purchase"
+msgstr "Ver Compra"
+
+#. module: sale_purchase_rel
+#: model:ir.ui.view,arch_db:sale_purchase_rel.view_order_form
+msgid "View Purchases"
+msgstr "Ver Compras"
+
+#. module: sale_purchase_rel
+#: model:ir.ui.view,arch_db:sale_purchase_rel.purchase_order_form
+msgid "View Sales"
+msgstr "Ver Ventas"
+
