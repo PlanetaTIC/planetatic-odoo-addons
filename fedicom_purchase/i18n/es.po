@@ -1,0 +1,352 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* fedicom_purchase
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-12 08:20+0000\n"
+"PO-Revision-Date: 2019-07-12 08:20+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:122
+#, python-format
+msgid "%s<br/>\n"
+"%s<br/>\n"
+" Incidences:<br/>\n"
+"<ul>%s</ul>"
+msgstr "%s<br/>\n"
+"%s<br/>\n"
+" Incidencias:<br/>\n"
+"<ul>%s</ul>"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:100
+#, python-format
+msgid "<li>Product [%s] %s: %s</li>"
+msgstr "<li>Producto [%s] %s: %s</li>"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:0
+#, python-format
+msgid "Could not confirm purchase %s, but this order has been sent to supplier %s using Fedicom protocol. When you confirm this order, it will be sent again through Fedicom."
+msgstr "El pedido %s no se ha podido confirmar en Odoo pero ya se ha realizado la petición al proveedor %s usando el protocolo Fedicom. Cuando se confirme este pedido se volverá a realizar la petición por Fedicom."
+
+#. module: fedicom_purchase
+#: selection:purchase.order.line,fedicom_reply_state:0
+msgid "Descartado"
+msgstr "Descartado"
+
+#. module: fedicom_purchase
+#: selection:purchase.order.line,fedicom_reply_state:0
+msgid "Desconocido"
+msgstr "Desconocido"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:39
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "Drop Out"
+msgstr "Descartado"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:33
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "Drug"
+msgstr "Fármaco"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:91
+#, python-format
+msgid "Error Connecting to FEDICOM"
+msgstr "Error Connectando con FEDICOM"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:262
+#: code:addons/fedicom_purchase/models/purchase.py:265
+#, python-format
+msgid "Error while reading header: %s"
+msgstr "Error al procesar la cabecera: %s"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_address_fedicom_host
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_res_partner_fedicom_host
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_supplier_fedicom_host
+#: model:ir.model.fields,field_description:fedicom_purchase.field_res_partner_fedicom_host
+#: model:ir.model.fields,field_description:fedicom_purchase.field_res_users_fedicom_host
+msgid "Fedicom Host"
+msgstr "URL Fedicom"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_purchase_order_fedicom_incidence
+#: model:ir.ui.view,arch_db:fedicom_purchase.view_purchase_order_filter
+msgid "Fedicom Incidence"
+msgstr "Incidencia Fedicom"
+
+#. module: fedicom_purchase
+#: model:ir.ui.menu,name:fedicom_purchase.menu_fedicom_log
+#: model:ir.ui.view,arch_db:fedicom_purchase.fedicomlog_purchase_tree_view
+msgid "Fedicom Log"
+msgstr "Fedicom Log"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_address_fedicom_port
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_res_partner_fedicom_port
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_supplier_fedicom_port
+#: model:ir.model.fields,field_description:fedicom_purchase.field_res_partner_fedicom_port
+#: model:ir.model.fields,field_description:fedicom_purchase.field_res_users_fedicom_port
+msgid "Fedicom Port"
+msgstr "Puerto Fedicom"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_purchase_order_line_fedicom_reply_state
+msgid "Fedicom Reply State"
+msgstr "Estado de respuesta Fedicom"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_purchase_order_fedicom_response
+msgid "Fedicom Response"
+msgstr "Respuesta Fedicom"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_address_supplier_fedicom
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_res_partner_supplier_fedicom
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_supplier_supplier_fedicom
+#: model:ir.model.fields,field_description:fedicom_purchase.field_res_partner_supplier_fedicom
+#: model:ir.model.fields,field_description:fedicom_purchase.field_res_users_supplier_fedicom
+msgid "Fedicom Supplier"
+msgstr "Proveedor Fedicom"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_address_fedicom_timeout
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_res_partner_fedicom_timeout
+#: model:ir.model.fields,field_description:fedicom_purchase.field_prestashop_supplier_fedicom_timeout
+#: model:ir.model.fields,field_description:fedicom_purchase.field_res_partner_fedicom_timeout
+#: model:ir.model.fields,field_description:fedicom_purchase.field_res_users_fedicom_timeout
+msgid "Fedicom Timeout"
+msgstr "Fedicom Timeout"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:72
+#, python-format
+msgid "Fedicom supplier %s could not serve any of the requested products."
+msgstr "El proveedor %s no puede servir ningún producto a través de Fedicom."
+
+#. module: fedicom_purchase
+#: selection:purchase.order.line,fedicom_reply_state:0
+msgid "Fármaco"
+msgstr "Fármaco"
+
+#. module: fedicom_purchase
+#: selection:purchase.order.line,fedicom_reply_state:0
+msgid "Indefinido"
+msgstr "Indefinido"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:41
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "Limit Service"
+msgstr "Servicio Limitado"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:71
+#, python-format
+msgid "Missing Fedicom host or port"
+msgstr "El proveedor no tiene los datos de conexión Fedicom: Falta la URL o el puerto"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:37
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "New Speciality"
+msgstr "Nueva Especialidad"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:30
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "No Serve"
+msgstr "Sin servicio"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:169
+#: code:addons/fedicom_purchase/models/purchase.py:170
+#, python-format
+msgid "No reply received"
+msgstr "No se ha recibido respuesta del servicio Fedicom"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:31
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "Not Worked"
+msgstr "No funcionó"
+
+#. module: fedicom_purchase
+#: model:ir.model,name:fedicom_purchase.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:36
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "Pass to Warehouse"
+msgstr "Movido a almacén"
+
+#. module: fedicom_purchase
+#: model:ir.model,name:fedicom_purchase.model_procurement_order
+msgid "Procurement"
+msgstr "Abastecimiento"
+
+#. module: fedicom_purchase
+#: model:ir.model,name:fedicom_purchase.model_product_product
+msgid "Product"
+msgstr "Producto"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:122
+#, python-format
+msgid "Product %s has no Code"
+msgstr "El producto %s no tiene referencia"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_fedicom_log_purchase_id
+msgid "Purchase"
+msgstr "Compra"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:0
+#, python-format
+msgid "Purchase %s has been sent to Fedicom but no response was obtained. If you want to sent this purchase again to Fedicom you must uncheck Fedicom Sent"
+msgstr "La compra %s ha sido enviada a Fedicom pero no se ha recibido respuesta. Si quieres volver a enviar esta compra a Fedicom desmarca la casilla \"Enviado a Fedicom\"."
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:0
+#, python-format
+msgid "Purchase %s is a Fedicom incidence and cannot be confirmed"
+msgstr "El pedido de compra %s está marcado como error de protocolo Fedicom y no puede ser confirmado."
+
+#. module: fedicom_purchase
+#: model:ir.model,name:fedicom_purchase.model_purchase_order
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: fedicom_purchase
+#: model:ir.model,name:fedicom_purchase.model_purchase_order_line
+msgid "Purchase Order Line"
+msgstr "Línea pedido de compra"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:42
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "Sanity Removed"
+msgstr "Quitado limpiamente"
+
+#. module: fedicom_purchase
+#: model:ir.model.fields,field_description:fedicom_purchase.field_purchase_order_fedicom_sent
+msgid "Sent to Fedicom"
+msgstr "Enviado a Fedicom"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:114
+#, python-format
+msgid "Supplier %s could not serve this purchase using Fedicom protocol. Purchase <a href=# data-oe-model=purchase.order data-oe-id=%d>%s</a> has been created."
+msgstr "El proveedor %s no ha podido servir este pedido de compra entero con el protocolo Fedicom. Se ha creado el pedido <a href=# data-oe-model=purchase.order data-oe-id=%d>%s</a>."
+
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:88
+#, python-format
+msgid "Supplier %s has processed order %s correctly"
+msgstr "El proveedor %s ha procesado el pedido %s correctamente"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:58
+#, python-format
+msgid "Supplier %s returned these errors while processing order %s:\n"
+" %s"
+msgstr "El proveedor %s ha devuelto estos errores mientras procesaba el pedido %s:\n"
+" %s"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:38
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "Temporal Drop Out"
+msgstr "Quitado temporalmente"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:138
+#, python-format
+msgid "This supplier has missing Fedicom credentials data"
+msgstr "A este proveedor le faltan credenciales para poder usar Fedicom"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:35
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "To Drop Out"
+msgstr "Para quitar"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:34
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "To Order"
+msgstr "Para ser pedido"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:40
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "To Order Ok"
+msgstr "OK para reservar"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:28
+#, python-format
+msgid "Undefined"
+msgstr "Indefinido"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:209
+#: code:addons/fedicom_purchase/models/purchase.py:227
+#, python-format
+msgid "Unexpected trace"
+msgstr "Traza inesperada"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:0
+#, python-format
+msgid "Unexpected trace, reading message"
+msgstr "Traza inesperada al leer la respuesta de Fedicom"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:32
+#, python-format
+msgid "Unknown"
+msgstr "Desconocido"
+
+#. module: fedicom_purchase
+#: code:addons/fedicom_purchase/models/purchase.py:29
+#: selection:purchase.order.line,fedicom_reply_state:0
+#, python-format
+msgid "Without Stock"
+msgstr "Sin stock"
+
+#. module: fedicom_purchase
+#: model:ir.model,name:fedicom_purchase.model_fedicom_log
+msgid "fedicom.log"
+msgstr "fedicom.log"
+

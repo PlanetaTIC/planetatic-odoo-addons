@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2013 NaN·tic <info@nan-tic.com>
+     Copyright 2019 PlanetaTIC - Marc Poch <mpoch@planetatic.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<openerp>
+<data>
+
+<record id="view_partner_fedicom_purchase_form" model="ir.ui.view">
+    <field name="name">partner.fedicom.form.inherit</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="fedicom_base.view_partner_fedicom_form"/>
+    <field name="arch" type="xml">
+        <page name='fedicom' position="inside">
+            <group name="supplier_fedicom" attrs="{'invisible': [('supplier', '=', False)]}">
+                <field name="supplier_fedicom" attrs="{'invisible': [('supplier', '=', False)]}"/>
+
+                <field name="fedicom_host" attrs="{'invisible': [('supplier_fedicom', '=', False)]}"/>
+                <field name="fedicom_port" attrs="{'invisible': [('supplier_fedicom', '=', False)]}"/>
+                <field name="fedicom_timeout" attrs="{'invisible': [('supplier_fedicom', '=', False)]}"/>
+            </group>
+        </page>
+    </field>
+</record>
+
+</data>
+</openerp>

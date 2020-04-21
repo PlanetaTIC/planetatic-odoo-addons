@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2013 NaN·tic <info@nan-tic.com>
+     Copyright 2019 PlanetaTIC - Marc Poch <mpoch@planetatic.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<openerp>
+<data>
+
+<record id="fedicomlog_tree_view" model="ir.ui.view">
+    <field name="name">Fedicom log tree</field>
+    <field name="model">fedicom.log</field>
+    <!-- <field name="priority">1</field> -->
+    <field name="arch" type="xml">
+        <tree string="Fedicom Log">
+            <field name="timestamp"/>
+            <field name="partner_id"/>
+            <field name="message"/>
+        </tree>
+    </field>
+</record>
+
+<record id="fedicomlog_action_form" model="ir.actions.act_window">
+    <field name="name">Fedicom Log</field>
+    <field name="type">ir.actions.act_window</field>
+    <field name="res_model">fedicom.log</field>
+    <field name="view_type">form</field>
+    <!-- <field name="search_view_id" ref="product_category_search_view"/> -->
+    <field name="view_id" ref="fedicomlog_tree_view"/>
+</record>
+
+</data>
+</openerp>

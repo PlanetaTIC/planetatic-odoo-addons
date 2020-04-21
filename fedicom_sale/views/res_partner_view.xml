@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2013 NaN·tic <info@nan-tic.com>
+     Copyright 2019 PlanetaTIC - Marc Poch <mpoch@planetatic.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<openerp>
+<data>
+
+<record id="view_partner_fedicom_sale_form" model="ir.ui.view">
+    <field name="name">partner.fedicom.form.inherit</field>
+    <field name="model">res.partner</field>
+    <field name="inherit_id" ref="fedicom_base.view_partner_fedicom_form"/>
+    <field name="arch" type="xml">
+        <page name='sales_purchases' position="after">
+<!--             <page name="fedicom" string="Fedicom">
+                <group name="fedicom_customer" attrs="{'invisible': ('customer', '=', False)}">
+                    <field name="fedicom_customer_user" />
+                    <field name="fedicom_customer_password" password="True" />
+                </group>
+            </page> -->
+        </page>
+    </field>
+</record>
+
+</data>
+</openerp>

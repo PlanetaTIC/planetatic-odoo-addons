@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2013 NaN·tic <info@nan-tic.com>
+     Copyright 2019 PlanetaTIC - Marc Poch <mpoch@planetatic.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<openerp>
+<data>
+
+<record id="fedicomlog_purchase_tree_view" model="ir.ui.view">
+    <field name="name">Fedicom Purchase log tree</field>
+    <field name="model">fedicom.log</field>
+    <field name="inherit_id" ref="fedicom_base.fedicomlog_tree_view" />
+    <field name="arch" type="xml">
+        <tree string="Fedicom Log">
+            <field name="purchase_id"/>
+        </tree>
+    </field>
+</record>
+
+<menuitem action="fedicom_base.fedicomlog_action_form" id="menu_fedicom_log"
+    parent="purchase.menu_purchase_config" sequence="20" groups="base.group_system"/>
+
+</data>
+</openerp>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Copyright 2013 NaN·tic <info@nan-tic.com>
+     Copyright 2019 PlanetaTIC - Marc Poch <mpoch@planetatic.com>
+     License AGPL-3.0 or later (http://www.gnu.org/licenses/agpl). -->
+<openerp>
+<data>
+
+<record id="view_purchase_order_form" model="ir.ui.view">
+    <field name="name">purchase.order.form.inherit</field>
+    <field name="model">purchase.order</field>
+    <field name="inherit_id" ref="purchase.purchase_order_form"/>
+    <field name="arch" type="xml">
+        <field name="partner_ref" position="after">
+            <field name="fedicom_incidence"/>
+            <field name="fedicom_response" invisible="True"/>
+            <field name="fedicom_sent" attrs="{'readonly': ['|', ('state', '!=', 'draft'), ('fedicom_response', '!=', False)]}"/>
+        </field>
+    </field>
+</record>
+
+<record id="view_purchase_order_tree" model="ir.ui.view">
+    <field name="name">purchase.order.tree.inherit</field>
+    <field name="model">purchase.order</field>
+    <field name="inherit_id" ref="purchase.purchase_order_tree"/>
+    <field name="arch" type="xml">
+        <field name="amount_total" position="after">
+            <field name="fedicom_incidence"/>
+        </field>
+    </field>
+</record>
+
+<record id="view_purchase_order_filter" model="ir.ui.view">
+    <field name="name">purchase.order.search.inherit</field>
+    <field name="model">purchase.order</field>
+    <field name="inherit_id" ref="purchase.view_purchase_order_filter"/>
+    <field name="arch" type="xml">
+        <filter name="to_approve" position="after">
+            <filter name="fedicom_incidence" string="Fedicom Incidence" domain="[('fedicom_incidence', '=', True)]"/>
+        </filter>
+    </field>
+</record>
+
+</data>
+</openerp>

@@ -1,0 +1,124 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+#	* fedicom_base
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 10.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-07-12 08:56+0000\n"
+"PO-Revision-Date: 2019-07-12 08:56+0000\n"
+"Last-Translator: <>\n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_create_uid
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_create_date
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_partner_id
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_display_name
+msgid "Display Name"
+msgstr "Nombre a mostrar"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_prestashop_address_fedicom_password
+#: model:ir.model.fields,field_description:fedicom_base.field_prestashop_res_partner_fedicom_password
+#: model:ir.model.fields,field_description:fedicom_base.field_prestashop_supplier_fedicom_password
+#: model:ir.model.fields,field_description:fedicom_base.field_res_partner_fedicom_password
+#: model:ir.model.fields,field_description:fedicom_base.field_res_users_fedicom_password
+msgid "FEDICOM Password"
+msgstr "Contraseña FEDICOM"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_prestashop_address_fedicom_user
+#: model:ir.model.fields,field_description:fedicom_base.field_prestashop_res_partner_fedicom_user
+#: model:ir.model.fields,field_description:fedicom_base.field_prestashop_supplier_fedicom_user
+#: model:ir.model.fields,field_description:fedicom_base.field_res_partner_fedicom_user
+#: model:ir.model.fields,field_description:fedicom_base.field_res_users_fedicom_user
+msgid "FEDICOM User"
+msgstr "Usuario FEDICOM"
+
+#. module: fedicom_base
+#: model:ir.ui.view,arch_db:fedicom_base.view_partner_fedicom_form
+msgid "Fedicom"
+msgstr "Fedicom"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_res_partner_fedicom_center
+#: model:ir.model.fields,field_description:fedicom_base.field_res_users_fedicom_center
+msgid "Fedicom Center"
+msgstr "Centro Fedicom"
+
+#. module: fedicom_base
+#: model:ir.actions.act_window,name:fedicom_base.fedicomlog_action_form
+#: model:ir.ui.view,arch_db:fedicom_base.fedicomlog_tree_view
+msgid "Fedicom Log"
+msgstr "Fedicom Log"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_res_partner_fedicom_order_type
+#: model:ir.model.fields,field_description:fedicom_base.field_res_users_fedicom_order_type
+msgid "Fedicom Order Type"
+msgstr "Tipo de pedido FEDICOM"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_res_partner_fedicom_supplier_code
+#: model:ir.model.fields,field_description:fedicom_base.field_res_users_fedicom_supplier_code
+msgid "Fedicom Supplier Code"
+msgstr "Código de Usuario FEDICOM"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_id
+msgid "ID"
+msgstr "ID"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log___last_update
+msgid "Last Modified on"
+msgstr "Última modificación en"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_write_uid
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_write_date
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_message
+msgid "Message"
+msgstr "Mensaje"
+
+#. module: fedicom_base
+#: model:ir.model,name:fedicom_base.model_res_partner
+msgid "Partner"
+msgstr "Empresa"
+
+#. module: fedicom_base
+#: model:ir.model.fields,field_description:fedicom_base.field_fedicom_log_timestamp
+msgid "Timestamp"
+msgstr "Fecha y hora"
+
+#. module: fedicom_base
+#: model:ir.model,name:fedicom_base.model_fedicom_log
+msgid "fedicom.log"
+msgstr "fedicom.log"
+
